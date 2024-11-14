@@ -1,0 +1,210 @@
+body {
+    background-color: rgb(198, 139, 213) ; 
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+#home {
+    text-align: center;
+    padding: 50px;
+}
+
+#home h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+#home img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%; 
+    height: auto;
+}
+
+
+.button {
+    background-color: mediumorchid;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: mediumorchid ;
+}
+
+#album {
+    text-align: center;
+    padding: 50px;
+}
+
+#album p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.album-images {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.album-images img {
+    width: 45%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: mediumorchid;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.buy-button:hover {
+    background-color:mediumorchid;
+}
+
+#merch {
+    padding: 50px;
+    text-align: left;
+}
+
+.merch-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.merch-info {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.merch-info h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.merch-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.buy-button {
+    display: inline-block;
+    background-color: mediumorchid;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.merch-image {
+    width: 50%;
+    text-align: center;
+}
+
+.merch-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about {
+    text-align: center;
+    padding: 50px;
+}
+
+#about h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container {
+    max-width: 600px;
+    width: 100%;
+}
+
+#contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: mediumorchid;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: mediumorchid;
+}

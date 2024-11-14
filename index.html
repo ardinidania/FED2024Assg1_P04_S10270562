@@ -1,8 +1,95 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Assignment 1</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#album">Album</a></li>
+            <li><a href="#merch">Merch</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+      <section id="home">
+        <h1>SIS (Soft Is Strong) ALBUM IS OUT NOW!</h1>
+        <img src="home.jpg" alt="Album Image">
+        <a href="https://open.spotify.com/artist/3c0gDdb9lhnHGFtP4prQpn" class="button">Stream Now</a>
+    </section>
+
+    <!-- Album Section -->
+    <section id="album">
+      <h2>Album</h2>
+      <p>Katseye's debut EP, SIS (Soft Is Strong), released on August 16, 2024, introduces the group’s unique sound, blending K-pop and Asian pop styles with themes of emotional resilience and strength through softness. The album title reflects this duality, aiming to show that vulnerability can coexist with power. Recorded across various global studios in locations like Hong Kong, Istanbul, and Los Angeles, the EP highlights Katseye's ambition to reach a worldwide audience. Each track is crafted to balance intensity and warmth, appealing to a broad fan base with its genre-crossing appeal​.</p>
+      
+      <div class="album-images">
+          <img src="album1.jpg" alt="Album Image 1">
+          <img src="album2.jpg" alt="Album Image 2">
+      </div>
+      
+      <a href="https://shop.weverse.io/en/shop/US_USD/artists/206/categories/4393" class="buy-button">BUY THE ALBUM HERE</a>
+    </section>
+
+    <!-- Merch Section -->
+    <section id="merch">
+      <div class="merch-container">
+        <div class="merch-info">
+            <h2><strong>KATSEYE - "RED PHOTO" TEE</strong></h2>
+            <p>ATSEYE's debut EP, SIS (Soft Is Strong), is out now via HYBE x Geffen Records. SIS (Soft Is Strong), the EP’s title, reflects one of KATSEYE’s core beliefs – Soft Is Strong – and also nods to the sisterhood they’ve forged, despite coming from immensely different cultures. The six members of KATSEYE are: DANIELA (USA); LARA (USA); MANON (Switzerland); MEGAN (USA); SOPHIA (Philippines); and YOONCHAE (South Korea).
+            </p>
+            <p>Tee Details:<br>
+                • 100% Ring-Spun Cotton<br>
+                • 6.1 oz. Jersey<br>
+                • Relaxed Unisex Fit<br>
+                • Screen printed Red Photo design on front and Touch graphic design on back.
+            </p>
+            <a href="https://shop.weverse.io/en/shop/US_USD/artists/206/sales/27565" class="buy-button">
+              BUY NOW<br>
+              <span class="price">$35.00</span>
+          </a>
+        </div>
+        <div class="merch-image">
+            <img src="merch-image.jpg" alt="Fan Pack Image">
+        </div>
+    </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <img src="about-image.jpg" alt="Katseye Group Image" class="about-image">
+      <p>Katseye, a six-member K-pop girl group, debuted in June 2024 as a collaborative project between HYBE and Geffen Records. Known for their cross-cultural blend, Katseye gained early attention through the Netflix series *Pop Star Academy: Katseye*, which documented their rigorous training journey. The group consists of members Sophia (leader), Lara, Daniela, Yoon Chae, Megan, and Manon, each bringing a unique background and skill set to the team. Their debut EP, *Soft Is Strong (SIS)*, explores themes of vulnerability and personal strength, resonating with fans worldwide.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-container">
+        <h2>Get in touch with us!</h2>
+        <form action="submit-form-url" method="post">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" id="phone" name="phone">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    </section>
+</body>
 </html>
+
