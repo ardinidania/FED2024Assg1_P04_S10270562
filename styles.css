@@ -1,8 +1,48 @@
 body {
-    background-color: rgb(198, 139, 213) ; 
-    margin: 0;
-    font-family: Arial, sans-serif; 
+    background-image: url('bg.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed; 
+    color: white; 
+    font-family: "Sriracha", cursive;
+
 }
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    width: 50px; 
+}
+
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
 
 #home {
     text-align: center;
