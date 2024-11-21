@@ -1,24 +1,28 @@
 body {
-    background-image: url('bg.jpg');
-    background-size: cover; 
-    background-position: center; 
-    background-attachment: fixed; 
+    background-color: rgb(1, 1, 1);
     color: white; 
-    font-family: "Sriracha", cursive;
-
+    font-family: "Just Another Hand", cursive; ;
 }
 
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: black;
     padding: 10px 20px;
+   
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header .logo img {
-    width: 50px; 
+    width: 100px; 
+    height: auto;
 }
 
 
@@ -36,7 +40,7 @@ header nav ul li {
 header nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: px;
+    font-size: 25px;
 }
 
 header nav ul li a:hover {
@@ -45,154 +49,238 @@ header nav ul li a:hover {
 
 
 #home {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 50px;
 }
 
-#home h1 {
-    font-size: 2rem;
-    margin-bottom: 20px;
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-#home img {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%; 
+.home-image {
+    width: 55%;
     height: auto;
 }
 
-
-.button {
-    background-color: mediumorchid;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
+.home-text {
+    width: 45%;
+    text-align: right;
 }
 
-.button:hover {
-    background-color: mediumorchid ;
+.home-text h1 {
+    font-family: "Gasoek One", sans-serif;
+    color: rgb(193, 167, 255);
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 10px 0;
 }
+
+.home-text h1, .home-text h2, .home-text h3 {
+    font-size: 2rem;
+    margin: 10px 0; 
+}
+
+.home-text h2, .home-text h3 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    color: rgb(71, 14, 205);
+    font-family: "Gasoek One", sans-serif;
+}
+
 
 #album {
-    text-align: center;
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#album p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.album-images {
+.album-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 20px;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
 }
 
-.album-images img {
-    width: 45%;
+.album-image img {
+    width: 50%;
     height: auto;
     border-radius: 10px;
 }
 
+.album-text {
+    width: 45%;
+    padding-left: 20px;
+    font-family: "Just Another Hand", cursive;
+}
+
+.album-text h2 {
+    font-family: "Gasoek One", sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgb(193, 167, 255);
+}
+
+.album-text p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 .buy-button {
-    display: inline-block;
     background-color: mediumorchid;
     color: white;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-family: "Gasoek One", sans-serif;
 }
 
 .buy-button:hover {
-    background-color:mediumorchid;
+    background-color: darkorchid;
 }
 
 #merch {
+    text-align: center;
     padding: 50px;
+    font-family: "Gasoek One", sans-serif;
+    color:rgb(193, 167, 255); 
+
+}
+
+#merch h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.merch-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    justify-items: center;
+}
+
+.merch-item {
+    width: 90%;
+    max-width: 200px;
     text-align: left;
 }
 
-.merch-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.merch-info {
-    width: 50%;
-    padding-right: 20px;
-}
-
-.merch-info h2 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.merch-info p {
-    font-size: 1rem;
-    margin-bottom: 10px;
-    line-height: 1.5;
-}
-
-.buy-button {
-    display: inline-block;
-    background-color: mediumorchid;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-}
-
-.price {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.merch-image {
-    width: 50%;
-    text-align: center;
-}
-
-.merch-image img {
-    max-width: 100%;
+.merch-item img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.merch-item img:hover {
+    transform: scale(1.05);
+}
+
+.merch-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.product-name {
+    font-weight: bold;
+    font-family: "Just Another Hand", cursive;
+    color: white;
+
+}
+
+.product-price {
+    color: mediumorchid;
+    font-family: "Just Another Hand", cursive;
+}
+
+.purchase-instructions {
+    margin-top: 30px;
+    font-size: 30px;
+    font-family: "Gasoek One", sans-serif;
 }
 
 #about {
-    text-align: center;
     padding: 50px;
 }
 
-#about h2 {
-    font-size: 2rem;
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 50px;
+    font-weight: bold;
     margin-bottom: 20px;
+    font-family: "Gasoek One", sans-serif;
+    color:rgb(193, 167, 255); 
+}
+
+.about-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
 }
 
 .about-image {
+    width: 45%;
+    text-align: center;
+}
+
+.about-image img {
     max-width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 20px;
 }
 
-#about p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: left;
+.video-title {
+    text-align: center; 
+    font-size: 30px; 
+    margin: 20px 0; 
+    font-family: "Gasoek One", sans-serif;
+    color: rgb(71, 14, 205);
 }
+
+.about-videos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+}
+
+iframe {
+    border: none;
+    max-width: 48%;
+}
+
+.netflix-stream img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.netflix-stream img:hover {
+    transform: scale(1.05);
+}
+
 
 #contact {
     padding: 50px;
@@ -208,13 +296,16 @@ header nav ul li a:hover {
 #contact h2 {
     font-size: 2rem;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     text-align: left;
+    font-family: "Gasoek One", sans-serif;
+    color:rgb(193, 167, 255); 
 }
 
 form {
     display: flex;
     flex-direction: column;
+    color:rgb(193, 167, 255); 
 }
 
 form label {
@@ -243,8 +334,11 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
+    font-family: "Gasoek One", sans-serif;
 }
 
 button:hover {
     background-color: mediumorchid;
 }
+
+
