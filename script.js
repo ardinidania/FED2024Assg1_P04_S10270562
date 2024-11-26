@@ -16,20 +16,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-window.onscroll = function() {
-    var footer = document.getElementById('footer');
-    if ((window.innerHeight + window.scrollY) >= document.body.scrollHeight) {
-        footer.style.display = "block";  
-    } else {
-        footer.style.display = "none";   
-    }
-};
 
-
+// Scroll function
 function scrollToTop() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-
-document.body.style.height = '2000px';
 
 
